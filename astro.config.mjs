@@ -10,11 +10,8 @@ export default defineConfig({
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/learn-with-jesstern' }],
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					label: 'Guides',	
+					autogenerate: { directory: 'guides' },
 				},
 				{
 					label: 'Reference',

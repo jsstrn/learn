@@ -10,7 +10,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Cloud Engineering",
-      favicon: "favicon.ico",
+      favicon: "./favicon.ico",
       social: [
         {
           icon: "github",

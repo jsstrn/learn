@@ -1,0 +1,41 @@
+---
+title: Conventions
+description: Required prerequisites before getting started with software and cloud engineering.
+---
+
+import { Aside, Badge, Icon } from '@astrojs/starlight/components';
+import { YouTube } from 'astro-embed';
+
+## Files and folders
+
+{/* <YouTube id="pjnSE99-cz0" /> */}
+
+When it comes to naming files and folders in your projects, it's important to follow consistent conventions to ensure clarity and maintainability. Here are some guidelines to consider.
+
+- **Avoid spaces**: Use hyphens (`-`) or underscores (`_`) instead of spaces to separate words in file and directory names.
+- **Avoid special characters**: Refrain from using special characters such as `!`, `@`, `#`, `$`, `%`, `^`, `&`, `*`, `(`, and `)` as they can cause issues in different operating systems and tools.
+- **Use `lowercase` letters**: Stick to lowercase letters to avoid confusion, especially on case-sensitive file systems.
+
+<Aside type="caution">
+  It's worth noting that Windows file systems are case-insensitive. This means that if you have two files named `File.txt` and `file.txt` in the same directory, Windows will treat them as the same file. This can lead to unexpected behavior when working on cross-platform projects. To avoid such issues, it's best to consistently use lowercase letters for all file and folder names.
+</Aside>
+
+## Git commit messages
+
+<Aside type="tip">
+  It's very common to include the issue number in the commit message, especially when using issue tracking systems like GitHub Issues or Jira. This helps link the commit to the relevant task or bug report.
+</Aside>
+
+### Follow existing conventions
+
+When writing Git commit messages, it's essential to follow a clear and consistent format. Often when we're working in a team, there are already established conventions for commit messages. If you're contributing to an existing project, make sure to check if there are any guidelines in place. 
+
+### Adopt established conventions
+
+If there are no established conventions, one approach is to follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification. This involves using specific prefixes to indicate the type of change being made, such as `feat` for new features, `fix` for bug fixes, and `docs` for documentation changes.
+
+For example, a commit message for adding a new authentication feature might look like this.
+
+```txt
+feat(auth): add user login functionality
+```

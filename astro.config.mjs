@@ -5,7 +5,9 @@ import starlight from "@astrojs/starlight";
 // https://astro.build/config
 export default defineConfig({
   redirects: {
-    "/": "/guides/names",
+    "/": "/introduction/philosophy/",
+    "/guides/names": "/guides/conventions",
+    "/guides/conventions" : "/introduction/philosophy/",
   },
   integrations: [
     starlight({
@@ -14,7 +16,7 @@ export default defineConfig({
         {
           icon: "github",
           label: "GitHub",
-          href: "https://github.com/learn",
+          href: "https://github.com/jsstrn/learn",
         },
       ],
       sidebar: [

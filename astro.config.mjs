@@ -6,12 +6,11 @@ import starlight from "@astrojs/starlight";
 export default defineConfig({
   redirects: {
     "/": "/introduction/philosophy/",
-    "/guides/names": "/guides/conventions",
-    "/guides/conventions" : "/introduction/philosophy/",
   },
   integrations: [
     starlight({
       title: "Cloud Engineering",
+      favicon: "favicon.ico",
       social: [
         {
           icon: "github",

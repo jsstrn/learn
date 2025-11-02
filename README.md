@@ -1,35 +1,32 @@
-# Starlight Starter Kit: Basics
+# learn
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+## 🏗️ Getting started
 
-```
+Create a new Astro project with the Starlight theme.
+
+```sh
 npm create astro@latest -- --template starlight
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Clone the project and install dependencies.
 
-## 🚀 Project Structure
-
-Inside of your Astro + Starlight project, you'll see the following folders and files:
-
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   └── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
+```sh
+npm install
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+Start development server and visit [localhost:4321](http://localhost:4321).
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+```sh
+npm run dev
+```
 
-Static assets, like favicons, can be placed in the `public/` directory.
+In certain cases, we may want to build and preview the site (e.g. testing the search bar).
+
+First, we run the `build` script and then the `preview` script. We can run both commands sequentially with the logical AND (`&&`) operator.
+
+```sh
+npm run build && npm run preview
+```
 
 ## 🧞 Commands
 
@@ -44,6 +41,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## 📖 Read the docs
 
 Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).

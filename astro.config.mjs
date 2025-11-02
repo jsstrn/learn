@@ -8,6 +8,7 @@ export default defineConfig({
   redirects: {
     "/": "/introduction/philosophy/",
   },
+  
   integrations: [
     starlight({
       title: "Cloud Engineering",
